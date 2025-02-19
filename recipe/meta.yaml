@@ -25,7 +25,7 @@
 #
 
 {% set name = "xrst" %}
-{% set version = "2025.0.2" %}
+{% set version = "2025.0.3" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -34,7 +34,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xrst-{{ version }}.tar.gz
-  sha256: 6e4bad6c6705b7e0fb8b909e4b0c1af3d5bbbff1bba6fe1271ba1869248f08d7
+  sha256: ba7202bba223d93b38fef506337584efb8543126f0182433ba09d54621a50f68
 
 build:
   entry_points:
