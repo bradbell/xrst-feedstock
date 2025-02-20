@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 # The xrst automated test uses xrst to document itself using its source code.
-# The program pytest/test_rst.py has an argument that determines 
+# The program pytest/test_rst.py has an argument that determines
 # if the local verision or the installed version of xrst is tested.
 #
 # imports
@@ -30,8 +30,16 @@ subprocess.run( command , check = True)
 os.chdir( f'xrst-{version}' )
 #
 # pytest/test_rst.py
-test_installed_version = 'True'
-command = [ 'python', 'pytest/test_rst.py', test_installed_version ]
+test_installed_version  = 'True'
+test_external_links     = 'True'
+suppress_spell_warnings = 'True'
+command = [
+   'python'                ,
+   'pytest/test_rst.py'    ,
+   test_installed_version  ,
+   test_external_links     ,
+   suppress_spell_warnings ,
+]
 print( ' '.join(command) )
 subprocess.run( command , check = True)
 #
