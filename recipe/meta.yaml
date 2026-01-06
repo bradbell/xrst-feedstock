@@ -25,9 +25,9 @@
 #
 
 {% set name = "xrst" %}
-{% set version = "2025.0.4" %}
+{% set version = "2026.0.0" %}
 #
-# Uncomment this line for local testing
+# Uncomment next line for local testing.
 # {% set python_min = "3.10" %}
 
 package:
@@ -36,7 +36,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xrst-{{ version }}.tar.gz
-  sha256: 2f75155177c1c70ae0da81c0a0d68a0192be77bb36acc948e8310f587c50a09b
+  sha256: c441a69c4e5695c30f1052b58da6978daa3a8a66ee9b1c5e36d1ec37700e88ed
 
 build:
   entry_points:
