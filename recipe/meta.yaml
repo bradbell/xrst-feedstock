@@ -54,7 +54,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - sphinx
-    - toml
+    - tomli
     - sphinx-copybutton
     - pyspellchecker
     - furo
