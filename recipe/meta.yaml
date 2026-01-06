@@ -26,7 +26,9 @@
 
 {% set name = "xrst" %}
 {% set version = "2025.0.4" %}
-{% set python_min = "3.8" %}
+#
+# Uncomment this line for local testing
+# {% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
